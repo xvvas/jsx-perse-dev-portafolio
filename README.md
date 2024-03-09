@@ -104,6 +104,3 @@ Renders a paragraph (`<p>`) styled as overline text.
 Follows the same props and usage as TypeH1.
 
 Each component is designed to be easily integrated into your project, allowing for consistent typography throughout your application. Remember to apply additional styles via the `className` prop as needed to match your design requirements.
-```
-
-In Markdown, code blocks are created with triple backticks (```) and you can specify the language immediately after the first set of backticks for syntax highlighting. Headings are created with `#` symbols, with the number of symbols representing the level of the heading. Inline code and elements are enclosed in single backticks (`).
