@@ -1,0 +1,115 @@
+.typeH1 {
+	font-size: 99px;
+	font-family: Rubik;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: -1.5px;
+	text-decoration: none;
+	text-transform: none;
+}
+.typeH2 {
+	font-size: 62px;
+	font-family: Rubik;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: -0.5px;
+	text-decoration: none;
+	text-transform: none;
+}
+.typeH3 {
+	font-size: 49px;
+	font-family: Rubik;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-transform: none;
+}
+.typeH4 {
+	font-size: 35px;
+	font-family: Rubik;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0.25px;
+	text-decoration: none;
+	text-transform: none;
+}
+.typeH5 {
+	font-size: 25px;
+	font-family: Rubik;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	text-transform: none;
+}
+.TypeH6 {
+	font-size: 21px;
+	font-family: Rubik;
+	font-weight: 500;
+	font-style: normal;
+	letter-spacing: 0.15px;
+	text-decoration: none;
+	text-transform: none;
+}
+.typeSubTitle1 {
+	font-size: 16px;
+	font-family: Rubik;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0.15px;
+	text-decoration: none;
+	text-transform: none;
+}
+.typeSubTitle2 {
+	font-size: 14px;
+	font-family: Rubik;
+	font-weight: 500;
+	font-style: normal;
+	letter-spacing: 0.1px;
+	text-decoration: none;
+	text-transform: none;
+}
+.typeBody1 {
+	font-size: 16px;
+	font-family: Fira Code;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0.5px;
+	text-decoration: none;
+	text-transform: none;
+}
+.typeBody2 {
+	font-size: 14px;
+	font-family: Fira Code;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0.25px;
+	text-decoration: none;
+	text-transform: none;
+}
+.typeButton {
+	font-size: 14px;
+	font-family: Fira Code;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 1.25px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.typeCaption {
+	font-size: 12px;
+	font-family: Fira Code;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0.4px;
+	text-decoration: none;
+	text-transform: none;
+}
+.typeOverline {
+	font-size: 10px;
+	font-family: Inter;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 1.5px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
