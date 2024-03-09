@@ -1,5 +1,5 @@
 .typeH1 {
-	font-size: 99px;
+	font-size: clamp(4rem, 4vw + 3rem, 6.188rem);;
 	font-family: Rubik;
 	font-weight: 300;
 	font-style: normal;
@@ -7,8 +7,9 @@
 	text-decoration: none;
 	text-transform: none;
 }
+
 .typeH2 {
-	font-size: 62px;
+	font-size: clamp(3.063rem, 2vw + 2.5rem, 3.875rem);;
 	font-family: Rubik;
 	font-weight: 300;
 	font-style: normal;
@@ -17,7 +18,7 @@
 	text-transform: none;
 }
 .typeH3 {
-	font-size: 49px;
+	font-size: clamp(2.188rem, 2vw + 1.75rem, 3.063rem);;
 	font-family: Rubik;
 	font-weight: 400;
 	font-style: normal;
@@ -25,7 +26,7 @@
 	text-transform: none;
 }
 .typeH4 {
-	font-size: 35px;
+	font-size: clamp(1.563rem, 2vw + 1rem, 2.188rem);;
 	font-family: Rubik;
 	font-weight: 400;
 	font-style: normal;
@@ -34,7 +35,7 @@
 	text-transform: none;
 }
 .typeH5 {
-	font-size: 25px;
+	font-size: clamp(1.313rem, 2vw + 0.25rem, 1.563rem);
 	font-family: Rubik;
 	font-weight: 400;
 	font-style: normal;
@@ -42,7 +43,7 @@
 	text-transform: none;
 }
 .TypeH6 {
-	font-size: 21px;
+	font-size: clamp(1rem, 1vw + 0.5rem, 1.313rem);;
 	font-family: Rubik;
 	font-weight: 500;
 	font-style: normal;
@@ -51,7 +52,7 @@
 	text-transform: none;
 }
 .typeSubTitle1 {
-	font-size: 16px;
+	font-size: clamp(0.875rem, 2vw - 0.25rem, 1rem);
 	font-family: Rubik;
 	font-weight: 400;
 	font-style: normal;
@@ -60,7 +61,7 @@
 	text-transform: none;
 }
 .typeSubTitle2 {
-	font-size: 14px;
+	font-size: clamp(0.75rem, 2vw - 0.25rem, 0.875rem);
 	font-family: Rubik;
 	font-weight: 500;
 	font-style: normal;
@@ -69,7 +70,7 @@
 	text-transform: none;
 }
 .typeBody1 {
-	font-size: 16px;
+	font-size: clamp(0.875rem, 2vw - 0.25rem, 1rem);;
 	font-family: Fira Code;
 	font-weight: 400;
 	font-style: normal;
@@ -78,7 +79,7 @@
 	text-transform: none;
 }
 .typeBody2 {
-	font-size: 14px;
+	font-size: clamp(0.75rem, 2vw - 0.25rem, 0.875rem);
 	font-family: Fira Code;
 	font-weight: 400;
 	font-style: normal;
@@ -87,7 +88,7 @@
 	text-transform: none;
 }
 .typeButton {
-	font-size: 14px;
+	font-size: clamp(0.75rem, 2vw - 0.25rem, 0.875rem);;
 	font-family: Fira Code;
 	font-weight: 400;
 	font-style: normal;
