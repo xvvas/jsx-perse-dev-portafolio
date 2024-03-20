@@ -15,5 +15,12 @@
         "react"
     ],
     "rules": {
+        "compilerOptions": {
+            "baseUrl": ".",
+            "paths": {
+              "@/*": ["src/*"]
+            }
+          },
+          "include": ["src/**/*"]
     }
 }
