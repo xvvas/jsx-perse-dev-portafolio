@@ -7,6 +7,83 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+# Alias and import  routes
+
+To create comprehensive documentation on setting up a project with custom JavaScript and Vite configuration for aliasing paths, let's break down the provided `jsconfig.json` and `vite.config.js` files. The goal is to simplify import statements in your project, making them more readable and easier to manage by using aliases instead of relative paths.
+
+### Introduction
+
+In modern JavaScript projects, especially those using frameworks like React, Vue, or Angular, managing imports can become cumbersome due to the use of relative paths (`../../Component`). To address this issue, you can configure path aliases, which allow for cleaner and more maintainable code. This documentation covers setting up path aliases in a React project using Vite and the `jsconfig.json` file.
+
+### jsconfig.json Configuration
+
+The `jsconfig.json` file is used in JavaScript projects to configure various aspects of the JavaScript language service, including paths for module resolution. Here's how to set it up for path aliases:
+
+```json
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@ct/*": ["src/components/templates/*"],
+      "@cg/*": ["src/components/global/*"],
+      "@ce/*": ["src/components/pages/*"],
+      "@cu/*": ["src/components/util/*"]
+    },
+    "target": "es6",
+    "module": "esnext"
+  },
+  "include": ["src/**/*"]
+}
+```
+
+- `baseUrl`: This setting specifies the base directory relative to which the paths are resolved. Here, `"."` means the project root.
+- `paths`: Defines aliases and the corresponding paths they represent. For instance, `@/*` maps to all files under the `src/` directory.
+- `include`: Specifies which files are included in the project context. Here, all files under `src/` and its subdirectories are included.
+
+### vite.config.js Configuration
+
+Vite is a build tool that aims to provide a faster and leaner development experience for modern web projects. Here's how to configure path aliases in `vite.config.js` for a React project:
+
+```js
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { fileURLToPath, URL } from 'url';
+
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@ct': fileURLToPath(new URL('./src/components/templates', import.meta.url)),
+      '@cg': fileURLToPath(new URL('./src/components/global', import.meta.url)),
+      '@ce': fileURLToPath(new URL('./src/components/pages', import.meta.url)),
+      '@cu': fileURLToPath(new URL('./src/components/utils', import.meta.url)),
+    },
+  },
+});
+```
+
+- `plugins`: Specifies Vite plugins used in the project. Here, `@vitejs/plugin-react` is used for React support.
+- `resolve.alias`: Defines aliases for directories, similar to the `jsconfig.json` setup. The use of `fileURLToPath` and `URL` is specific to Vite's way of resolving paths, ensuring compatibility with different environments.
+
+### Usage
+
+With these configurations, you can now import your components using the defined aliases. For example:
+
+```jsx
+import MyComponent from '@/components/MyComponent';
+import MyTemplate from '@ct/MyTemplate';
+```
+
+This setup simplifies imports, making them cleaner and more manageable, especially in large projects.
+
+### Conclusion
+
+Setting up path aliases in a JavaScript project using Vite and `jsconfig.json` helps improve code maintainability and readability. By following the configurations outlined above, you can achieve a more organized project structure and a smoother development experience.
+
+
+
 # Typography Components
 
 This document provides an overview of the Typography components available for use. These components are designed to standardize the typography across your application and include various heading styles, subtitle types, body types, and special types. Each component supports custom class names for further styling flexibility.
