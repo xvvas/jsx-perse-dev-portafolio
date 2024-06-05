@@ -1,13 +1,22 @@
 .ContainerNav{
-    max-width: 100%;
-    height: 3.5rem;
+    width: -webkit-fill-available;
+    height: 5vh;
     padding: 0px clamp(2rem, 35vw - 15rem, 12.375rem);
     background-color: rgb(59, 59, 59);
 }
 
 .ContainerFooter{
-    max-width: 100%;
-    height: 3.5rem;
+    width: -webkit-fill-available;
+    height: 5vh;
     padding: 0px clamp(2rem, 35vw - 15rem, 12.375rem);
     background-color: rgb(59, 59, 59);
+}
+
+.ContainerMain{
+    width: -webkit-fill-available;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;    
+    padding: 0px clamp(2rem, 30vw - 13rem, 12rem);
+    background-color: rgb(34, 34, 34);
 }

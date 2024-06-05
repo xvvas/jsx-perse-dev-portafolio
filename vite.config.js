@@ -11,7 +11,8 @@ export default defineConfig({
       '@ct': fileURLToPath(new URL('./src/components/templates', import.meta.url)),
       '@cg': fileURLToPath(new URL('./src/components/global', import.meta.url)),
       '@ce': fileURLToPath(new URL('./src/components/pages', import.meta.url)),
-      '@cu': fileURLToPath(new URL('./src/components/utils', import.meta.url)),
+      '@cu': fileURLToPath(new URL('./src/components/util', import.meta.url)),
+      '@cc': fileURLToPath(new URL('./src/components/content', import.meta.url)),
     },
   },
 });

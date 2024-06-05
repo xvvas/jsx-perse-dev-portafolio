@@ -1,6 +1,6 @@
-import LandingFooter from "@/components/global/landingFooter/landingFooter";
-import LandingNav from "@/components/global/landingNav/landingNav";
-import Home from "@/components/pages/landing/Home";
+import LandingFooter from "@cg/landingFooter/landingFooter";
+import LandingNav from "@cg/landingNav/landingNav";
+import Home from "@ce/landing/Home";
 
 
 export default function LandingTemplate() {

@@ -1,5 +1,7 @@
+//react
 import PropTypes from 'prop-types';
 
+//css
 import "./Type.css"
 
 //H Type

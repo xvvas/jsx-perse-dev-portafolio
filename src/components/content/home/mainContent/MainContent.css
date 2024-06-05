@@ -1,0 +1,18 @@
+
+.MainContent{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: gainsboro;
+}
+
+.MainContent__initScroll {
+    width: -webkit-fill-available;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

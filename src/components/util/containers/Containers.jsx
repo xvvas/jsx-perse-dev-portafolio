@@ -29,3 +29,16 @@ ContainerFooter.propTypes = {
     children: PropTypes.node.isRequired,
     className: PropTypes.string,
 }
+
+export function ContainerMain({children, className}){
+    return(
+        <main className={`ContainerMain ${className ? className : ''}`}>
+            {children}
+        </main>
+    )
+}
+
+ContainerMain.propTypes = {
+    children: PropTypes.node.isRequired,
+    className: PropTypes.string,
+}

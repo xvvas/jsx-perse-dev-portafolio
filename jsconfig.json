@@ -16,6 +16,9 @@
       ],
       "@cu/*": [
         "src/components/util/*"
+      ],
+      "@cc/*": [
+        "src/components/content/*"
       ]
     },
     "target": "es6",
