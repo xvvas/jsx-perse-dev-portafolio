@@ -38,7 +38,24 @@ export function ContainerMain({children, className}){
     )
 }
 
+
+
 ContainerMain.propTypes = {
+    children: PropTypes.node.isRequired,
+    className: PropTypes.string,
+}
+
+export function ContainerSection({children, className}){
+    return(
+        <section className={`ContainerMain ${className ? className : ''}`}>
+            {children}
+        </section>
+    )
+}
+
+
+
+ContainerSection.propTypes = {
     children: PropTypes.node.isRequired,
     className: PropTypes.string,
 }
