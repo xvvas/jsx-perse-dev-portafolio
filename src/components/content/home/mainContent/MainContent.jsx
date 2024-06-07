@@ -11,10 +11,10 @@ import IconNavArrowDown from "@cu/icons/Icons";
 export default function MainContent() {
     return (
         <ContainerMain>
-            <section className="MainContent">
+            <div className="MainContent">
                 <TypeH6>¡Hola! Mi nombre es Miguel</TypeH6>
                 <TypeH1>Desarrollador web <br/> en Medellín</TypeH1>
-            </section>
+            </div>
             <div className="MainContent__initScroll">
                 <TypeButton>Conóceme</TypeButton>
                 <IconNavArrowDown/>
