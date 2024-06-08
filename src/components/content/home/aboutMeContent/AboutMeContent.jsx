@@ -1,6 +1,7 @@
 import { TypeBody2, TypeButton, TypeH2, TypeH3 } from "@cu/fonts/Type"
 import { ContainerCard, ContainerSection } from "@cu/containers/Containers"
 import IconNavArrowDown from "@cu/icons/Icons"
+import { BtnArrowDown } from "@/components/util/interface/btns/Btns"
 
 export default function AboutMeContent() {
     return (
@@ -25,8 +26,7 @@ export default function AboutMeContent() {
                     </ContainerCard>
                 </div>
                 <div className="aboutMeContent__initScroll">
-                    <TypeButton>Conóceme</TypeButton>
-                    <IconNavArrowDown />
+                    <BtnArrowDown label="Ver más"/>
                 </div>
             </div>     
         </ContainerSection >
