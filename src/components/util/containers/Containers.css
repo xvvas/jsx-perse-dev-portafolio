@@ -20,3 +20,12 @@
     padding: 0px clamp(2rem, 30vw - 13rem, 12rem);
     background-color: rgb(34, 34, 34);
 }
+
+.ContainerSection{
+    width: -webkit-fill-available;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;    
+    padding: 0px clamp(2rem, 30vw - 13rem, 12rem);
+    background-color: rgb(34, 34, 34);
+}
