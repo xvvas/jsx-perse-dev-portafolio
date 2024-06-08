@@ -5,7 +5,7 @@ import "./MainContent.css"
 
 //util
 import { ContainerMain } from "@cu/containers/Containers";
-import IconNavArrowDown from "@cu/icons/Icons";
+import { BtnArrowDown } from "@cu/interface/btns/Btns";
 
 
 export default function MainContent() {
@@ -16,8 +16,7 @@ export default function MainContent() {
                 <TypeH1>Desarrollador web <br/> en Medellín</TypeH1>
             </div>
             <div className="mainContent__initScroll">
-                <TypeButton>Conóceme</TypeButton>
-                <IconNavArrowDown/>
+                <BtnArrowDown label="Conóceme"/>
             </div>
         </ContainerMain>
     )
