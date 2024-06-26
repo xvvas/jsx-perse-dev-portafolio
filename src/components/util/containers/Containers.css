@@ -14,18 +14,25 @@
 
 .ContainerMain{
     width: -webkit-fill-available;
-    min-height: 90vh;
+    min-height: 95vh;
     display: flex;
     flex-direction: column;    
     padding: 0px clamp(2rem, 30vw - 13rem, 12rem);
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(12, 12, 12);
 }
 
 .ContainerSection{
     width: -webkit-fill-available;
-    min-height: 90vh;
+    min-height: 95vh;
     display: flex;
     flex-direction: column;    
-    padding: 0px clamp(2rem, 30vw - 13rem, 12rem);
-    background-color: rgb(34, 34, 34);
+    padding: 0rem clamp(2rem, 30vw - 13rem, 12rem);
+    background-color: rgb(92, 91, 91);
+}
+
+.ContainerCard{
+    flex: 1;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--color-deep-black);
 }

@@ -20,3 +20,16 @@ BtnArrowDown.propTypes = {
     className: PropTypes.string,
     label: PropTypes.string.isRequired,
 }
+
+export function BtnOutline({ className, label }) {
+    return (
+        <button className={`BtnOutline ${className}`}>
+            <TypeButton>{label}</TypeButton>
+        </button>
+    )
+}
+
+BtnOutline .propTypes = {
+    className: PropTypes.string,
+    label: PropTypes.string.isRequired,
+}
