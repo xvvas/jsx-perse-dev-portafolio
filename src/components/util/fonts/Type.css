@@ -1,5 +1,5 @@
 .typeH1 {
-	font-size: clamp(4rem, 4vw + 3rem, 6.188rem);;
+	font-size: clamp(2rem, 1vw + 3rem, 6.188rem);
 	font-family: Rubik;
 	font-weight: 300;
 	font-style: normal;
