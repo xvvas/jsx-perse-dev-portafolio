@@ -5,7 +5,7 @@ import "./Btns.css"
 
 //utils
 import { TypeButton } from "@cu/fonts/Type";
-import IconNavArrowDown from "@cu/icons/Icons";
+import { IconNavArrowDown } from "@cu/icons/Icons";
 
 export function BtnArrowDown({ className, label }) {
     return (

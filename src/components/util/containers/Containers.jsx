@@ -1,12 +1,12 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 //style
-import './Containers.css'
+import "./Containers.css"
 
 
 export function ContainerNav({children, className}){
     return(
-        <header className={`ContainerNav ${className ? className: ''}`}>
+        <header className={`ContainerNav ${className ? className: ""}`}>
             {children}
         </header>
     )
@@ -19,7 +19,7 @@ ContainerNav.propTypes = {
 
 export function ContainerFooter({children, className}){
     return(
-        <footer className={`ContainerFooter ${className ? className : ''}`}>
+        <footer className={`ContainerFooter ${className ? className : ""}`}>
             {children}
         </footer>
     )
@@ -32,7 +32,7 @@ ContainerFooter.propTypes = {
 
 export function ContainerMain({children, className}){
     return(
-        <main className={`ContainerMain ${className ? className : ''}`}>
+        <main className={`ContainerMain ${className ? className : ""}`}>
             {children}
         </main>
     )
@@ -47,7 +47,7 @@ ContainerMain.propTypes = {
 
 export function ContainerSection({children, className}){
     return(
-        <section className={`ContainerSection ${className ? className : ''}`}>
+        <section className={`ContainerSection ${className ? className : ""}`}>
             {children}
         </section>
     )
@@ -60,7 +60,7 @@ ContainerSection.propTypes = {
 
 export function ContainerCard({children, className}){
     return(
-        <div className={`ContainerCard ${className ? className : ''}`}>
+        <div className={`ContainerCard ${className ? className : ""}`}>
             {children}
         </div>
     )

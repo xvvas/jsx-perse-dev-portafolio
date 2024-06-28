@@ -6,7 +6,7 @@ import { ContainerCard, ContainerSection } from "@cu/containers/Containers";
 import { TypeBody2, TypeH3, TypeH4 } from "@cu/fonts/Type";
 import { BtnArrowDown, BtnOutline } from "@cu/interface/btns/Btns";
 
-export function ContentWork() {
+export default function ContentWork() {
     return (
         <ContainerSection className="ContentWork">
             <div className="contentWork__head">
