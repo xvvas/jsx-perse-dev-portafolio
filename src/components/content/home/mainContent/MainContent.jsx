@@ -1,5 +1,5 @@
 //css
-import { TypeButton, TypeH1, TypeH6 } from "@/components/util/fonts/Type";
+import { TypeH1, TypeH6 } from "@/components/util/fonts/Type";
 import "./MainContent.css"
 
 
