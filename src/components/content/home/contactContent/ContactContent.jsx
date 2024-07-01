@@ -3,7 +3,7 @@ import "./ContactContent.css"
 //util
 import { TypeBody2, TypeH5, TypeSubTitle1 } from "@cu/fonts/Type";
 import { ContainerCard, ContainerSection } from "@cu/containers/Containers";
-import { IconFigma, IconGitHub, IconInstagram } from "@cu/icons/Icons";
+import { IconFigma, IconGitHub, IconInstagram, IconLinkedIN } from "@cu/icons/Icons";
 
 export default function ContactContent() {
     return (
@@ -16,7 +16,7 @@ export default function ContactContent() {
                         <IconGitHub/>
                         <IconFigma/>
                         <IconInstagram/>
-                        
+                        <IconLinkedIN/>
                     </div>
                 </ContainerCard>
                 <div className="contactContent__quote">

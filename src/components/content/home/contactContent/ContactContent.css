@@ -30,3 +30,15 @@
 .contactContent__quote>h5{
     width: 50%;
 }
+
+@media(max-width: 912px){
+    .contactContent__content{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0rem;
+    } 
+
+    .contactContent__quote>h5{
+        width: 100%;
+    }
+}
