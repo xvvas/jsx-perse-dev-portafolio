@@ -11,7 +11,7 @@ import { BtnArrowDown } from "@cu/interface/btns/Btns";
 export default function BioMainContent() {
     return (
         <ContainerMain className="BioMainContent">
-            <div className="bioMainContent_content">
+            <div className="bioMainContent__content">
                 <TypeH1>
                     Un apasionado por la tecnología y el arte
                 </TypeH1>
@@ -20,7 +20,7 @@ export default function BioMainContent() {
                 </TypeSubTitle1>
             </div>
             <div className="bioMainContent__initScroll">
-                <BtnArrowDown/>
+                <BtnArrowDown label="Conóceme"/>
             </div>
         </ContainerMain>
     )

@@ -1,5 +1,9 @@
-
+//react
 import PropTypes from 'prop-types';
+
+//router
+import { Link } from "react-router-dom";
+
 //css
 import "./Btns.css"
 
@@ -32,4 +36,18 @@ export function BtnOutline({ className, label }) {
 BtnOutline .propTypes = {
     className: PropTypes.string,
     label: PropTypes.string.isRequired,
+}
+
+export function BtnLink({ className, label, to }) {
+    return (
+        <Link to={to} className={`BtnLink ${className}`}>
+            <TypeButton>{label}</TypeButton>
+        </Link>
+    )
+}
+
+BtnLink .propTypes = {
+    className: PropTypes.string,
+    label: PropTypes.string.isRequired,
+    to: PropTypes.string.isRequired,
 }

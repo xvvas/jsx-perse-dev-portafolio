@@ -1,29 +1,29 @@
-.BioMainContent {
+.BioAboutMeContent {
     flex-direction: column;
     flex-direction: column;
     justify-content: center;
 }
 
-.bioMainContent__content{
+.bioAboutMeContent__content {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.bioMainContent__content>.typeH1{
+.bioAboutMeContent__content>.typeH2 {
     background: var(--color-text-deg);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.bioMainContent__content>.typeSubTitle1{
+.bioAboutMeContent__content>.typeBody1 {
     color: var(--color-White);
 }
 
-.bioMainContent__initScroll {
+.bioAboutMeContent__initScroll {
     width: -webkit-fill-available;
     height: 10%;
     display: flex;
@@ -32,10 +32,10 @@
     align-items: center;
 }
 
-.bioMainContent__initScroll>button{
+.bioAboutMeContent__initScroll>button {
     color: var(--color-White);
 }
 
-.bioMainContent__initScroll>button>svg>path{
+.bioAboutMeContent__initScroll>button>svg>path {
     stroke: var(--color-White);
 }
