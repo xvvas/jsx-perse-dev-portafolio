@@ -1,0 +1,66 @@
+.BioProfesionalPathContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.bioProfesionalPathContent__content{
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bioProfesionalPathContent__card{
+    display: flex;
+    min-height: 9rem;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bioProfesionalPathContent__cardHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bioProfesionalPathContent__cardHead--reverse{
+    flex-direction: row-reverse;
+}
+
+.bioProfesionalPathContent__title,
+.bioProfesionalPathContent__cardHead>.typeH4 {
+    background: var(--color-text-deg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bioProfesionalPathContent__cardHead>.typeSubTitle2{
+    color: var(--color-secondary);
+}
+
+.bioProfesionalPathContent__cardBody>.typeBody2{
+    color: var(--color-White);
+}
+
+
+.bioProfesionalPathContent__initScroll {
+    width: -webkit-fill-available;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bioProfesionalPathContent__initScroll>button{
+    color: var(--color-White);
+}
+
+.bioProfesionalPathContent__initScroll>button>svg>path{
+    stroke: var(--color-White);
+}
