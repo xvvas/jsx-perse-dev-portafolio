@@ -35,7 +35,7 @@ export default function WorkProjectsContent() {
 		]
 	},
 	{
-		subtitle: "Proeject Manager",
+		subtitle: "Project Manager",
 		projects: [
 			{
 				title: "Soltecnica",
