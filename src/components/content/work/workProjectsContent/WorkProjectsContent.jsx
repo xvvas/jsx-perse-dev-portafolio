@@ -5,6 +5,7 @@ import "./WorkProjectsContent.css"
 import { TypeBody2, TypeCaption, TypeH3, TypeH4 } from "@cu/fonts/Type";
 import { BtnLink } from "@cu/interface/btns/Btns";
 import { ContainerCard, ContainerSection } from "@cu/containers/Containers";
+import { BtnArrowDown } from "@cu/interface/btns/Btns";
 
 export default function WorkProjectsContent() {
 
@@ -69,19 +70,19 @@ export default function WorkProjectsContent() {
 				title: "Rodriguez Law Group Ui Desing",
 				description: "Es una firma de abogados de la ciudad de miami que requerían actualizar su landig por una más actualizada y estética, se solicitó algo minimalista, no muy cargado, con formulario de contacto y algunos llamados a la accion.",
 				technologies: ["Figma"],
-				link: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+				link: "https://www.figma.com/community/file/1231373922080385486/prototipo-web-para-rodriguez-lawgroup"
 			},
 			{
-				title: "Página web de un restaurante",
-				description: "Diseño y desarrollo de una página web para un restaurante en Miami, USA.",
-				technologies: ["HTML", "CSS", "JavaScript", "React", "AOS", "Netlify"],
-				link: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+				title: "Kit Cannabico",
+				description: "Proyecto totalmente con el objetivo de practicar habilidades frontend, principalmente usando tecnologías de diseño CSS/HTML",
+				technologies: ["Figma"],
+				link: "https://www.figma.com/community/file/1125179501307371221/kit-cannabico"
 			},
 			{
-				title: "Página web de un negocio",
-				description: "Diseño y desarrollo de una página web para un negocio en Miami, USA.",
-				technologies: ["HTML", "CSS", "JavaScript", "React", "AOS", "Netlify"],
-				link: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+				title: "Portafolio",
+				description: "El prototipo de este portafolio",
+				technologies: ["Figma"],
+				link: "https://www.figma.com/community/file/1330349126286430041"
 			}
 		]
 	}
@@ -120,7 +121,9 @@ export default function WorkProjectsContent() {
 					</div>
 				</div>
 			))}
-
+			<div className="workProjectsContent__initScroll">
+                <BtnArrowDown label="Conóceme"/>
+            </div>
 		</ContainerSection>
 	)
 }
