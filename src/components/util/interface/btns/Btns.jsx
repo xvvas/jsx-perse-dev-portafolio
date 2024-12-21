@@ -54,7 +54,7 @@ BtnLink .propTypes = {
 
 export function BtnNav({className, label, to}){
     return(
-        <Link to={to} className={`className`}>
+        <Link to={to} className={`BtnNav ${className}`}>
             <TypeButton>{label}</TypeButton>
             <div className='hoverline'></div>
         </Link>

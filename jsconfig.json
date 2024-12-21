@@ -5,6 +5,9 @@
       "@/*": [
         "src/*"
       ],
+      "@ap/*":[
+        "src/assets/png"
+      ],
       "@ct/*":[
         "src/components/templates/*"
       ],
