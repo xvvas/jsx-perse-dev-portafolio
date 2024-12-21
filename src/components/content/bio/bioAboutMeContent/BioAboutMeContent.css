@@ -1,0 +1,41 @@
+.BioAboutMeContent {
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bioAboutMeContent__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bioAboutMeContent__content>.typeH2 {
+    background: var(--color-text-deg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bioAboutMeContent__content>.typeBody1 {
+    color: var(--color-White);
+}
+
+.bioAboutMeContent__initScroll {
+    width: -webkit-fill-available;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bioAboutMeContent__initScroll>button {
+    color: var(--color-White);
+}
+
+.bioAboutMeContent__initScroll>button>svg>path {
+    stroke: var(--color-White);
+}

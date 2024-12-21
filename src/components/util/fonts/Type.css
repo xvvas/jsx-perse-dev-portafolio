@@ -1,11 +1,13 @@
 .typeH1 {
-	font-size: clamp(4rem, 4vw + 3rem, 6.188rem);;
+	font-size: clamp(2rem, 1vw + 3rem, 6.188rem);
 	font-family: Rubik;
 	font-weight: 300;
 	font-style: normal;
 	letter-spacing: -1.5px;
 	text-decoration: none;
 	text-transform: none;
+	padding: 0;
+	margin: 0;
 }
 
 .typeH2 {
@@ -16,6 +18,8 @@
 	letter-spacing: -0.5px;
 	text-decoration: none;
 	text-transform: none;
+	padding: 0;
+	margin: 0;
 }
 .typeH3 {
 	font-size: clamp(2.188rem, 2vw + 1.75rem, 3.063rem);;
@@ -24,6 +28,8 @@
 	font-style: normal;
 	text-decoration: none;
 	text-transform: none;
+	padding: 0;
+	margin: 0;
 }
 .typeH4 {
 	font-size: clamp(1.563rem, 2vw + 1rem, 2.188rem);;
@@ -33,6 +39,8 @@
 	letter-spacing: 0.25px;
 	text-decoration: none;
 	text-transform: none;
+	padding: 0;
+	margin: 0;
 }
 .typeH5 {
 	font-size: clamp(1.313rem, 2vw + 0.25rem, 1.563rem);
@@ -41,8 +49,10 @@
 	font-style: normal;
 	text-decoration: none;
 	text-transform: none;
+	padding: 0;
+	margin: 0;
 }
-.TypeH6 {
+.typeH6 {
 	font-size: clamp(1rem, 1vw + 0.5rem, 1.313rem);;
 	font-family: Rubik;
 	font-weight: 500;
@@ -50,6 +60,8 @@
 	letter-spacing: 0.15px;
 	text-decoration: none;
 	text-transform: none;
+	padding: 0;
+	margin: 0;
 }
 .typeSubTitle1 {
 	font-size: clamp(0.875rem, 2vw - 0.25rem, 1rem);
@@ -59,6 +71,8 @@
 	letter-spacing: 0.15px;
 	text-decoration: none;
 	text-transform: none;
+	padding: 0;
+	margin: 0;
 }
 .typeSubTitle2 {
 	font-size: clamp(0.75rem, 2vw - 0.25rem, 0.875rem);
@@ -68,6 +82,8 @@
 	letter-spacing: 0.1px;
 	text-decoration: none;
 	text-transform: none;
+	padding: 0;
+	margin: 0;
 }
 .typeBody1 {
 	font-size: clamp(0.875rem, 2vw - 0.25rem, 1rem);;
@@ -77,6 +93,8 @@
 	letter-spacing: 0.5px;
 	text-decoration: none;
 	text-transform: none;
+	padding: 0;
+	margin: 0;
 }
 .typeBody2 {
 	font-size: clamp(0.75rem, 2vw - 0.25rem, 0.875rem);
@@ -86,6 +104,8 @@
 	letter-spacing: 0.25px;
 	text-decoration: none;
 	text-transform: none;
+	padding: 0;
+	margin: 0;
 }
 .typeButton {
 	font-size: clamp(0.75rem, 2vw - 0.25rem, 0.875rem);;
@@ -95,6 +115,8 @@
 	letter-spacing: 1.25px;
 	text-decoration: none;
 	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
 }
 .typeCaption {
 	font-size: 12px;
@@ -104,6 +126,8 @@
 	letter-spacing: 0.4px;
 	text-decoration: none;
 	text-transform: none;
+	padding: 0;
+	margin: 0;
 }
 .typeOverline {
 	font-size: 10px;
@@ -113,4 +137,6 @@
 	letter-spacing: 1.5px;
 	text-decoration: none;
 	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
 }

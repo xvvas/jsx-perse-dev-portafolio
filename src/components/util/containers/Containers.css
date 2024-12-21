@@ -1,0 +1,38 @@
+.ContainerNav{
+    width: -webkit-fill-available;
+    height: 5vh;
+    padding: 0px clamp(2rem, 35vw - 15rem, 12.375rem);
+    background-color: rgb(59, 59, 59);
+}
+
+.ContainerFooter{
+    width: -webkit-fill-available;
+    height: 5vh;
+    padding: 0px clamp(2rem, 35vw - 15rem, 12.375rem);
+    background-color: rgb(59, 59, 59);
+}
+
+.ContainerMain{
+    width: -webkit-fill-available;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;    
+    padding: 0px clamp(2rem, 30vw - 13rem, 12rem);
+    background-color: rgb(12, 12, 12);
+}
+
+.ContainerSection{
+    width: -webkit-fill-available;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;    
+    padding: 0rem clamp(2rem, 30vw - 13rem, 12rem);
+    background-color: rgb(92, 91, 91);
+}
+
+.ContainerCard{
+    flex: 1;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--color-deep-black);
+}

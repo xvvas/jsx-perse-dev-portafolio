@@ -1,0 +1,36 @@
+.contentWork__head,
+.contentWork__initScroll{
+    width: -webkit-fill-available;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentWork__cards {
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contentWork__card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contentWork__cardHead{
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentWork__cardHead>h4{
+    flex: 8;
+}
+
+.contentWork__cardHead>button{
+    flex: 1;
+}

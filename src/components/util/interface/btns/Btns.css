@@ -1,0 +1,22 @@
+.BtnArrowDown{
+    background: transparent;
+    outline: none;
+    border-color: transparent;
+}
+
+.BtnOutline,
+.BtnLink{
+    outline: none;
+    color: var(--color-White);
+    padding: 0.2rem 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--color-secondary);
+    background: transparent;
+}
+
+.BtnOutline:hover,
+.BtnLink:hover{
+    outline: none;
+    color: var(--color-White);
+    background: var(--color-secondary);
+}

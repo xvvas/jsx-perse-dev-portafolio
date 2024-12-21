@@ -1,0 +1,42 @@
+.WorkDescriptionContent{
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.workDescriptionContent__content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.workDescriptionContent__title{
+    background: var(--color-text-deg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.workDescriptionContent__txt{
+    color: var(--color-White);
+}
+
+.workDescriptionContent__initScroll {
+    width: -webkit-fill-available;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.workDescriptionContent__initScroll>button {
+    color: var(--color-White);
+}
+
+.workDescriptionContent__initScroll>button>svg>path {
+    stroke: var(--color-White);
+}

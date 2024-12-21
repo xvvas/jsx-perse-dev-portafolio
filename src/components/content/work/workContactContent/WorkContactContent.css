@@ -1,0 +1,33 @@
+.WorkContactContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workContactContent__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 5rem;
+}
+
+.workContactContent__cardTitle{
+    width: -webkit-fill-available;
+    text-align: center;
+    display: block;
+    align-self: start;
+    background: var(--color-text-deg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.workContactContent__cardTxt{
+    color: var(--color-White);
+}
+
+.workContactContent__icons{
+    display: flex;
+    gap: 1rem;
+}

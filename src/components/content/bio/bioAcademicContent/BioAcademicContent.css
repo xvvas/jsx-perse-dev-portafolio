@@ -1,0 +1,52 @@
+.BioAcademicContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bioAcademicContent__head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bioAcademicContent__content {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.bioAcademicContent__card{
+    flex: none !important;
+    min-height: 10rem;
+    width: calc(100% / 3.5);
+    display: grid;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.bioAcademicContent__card>a{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+.bioAcademicContent__title{
+    display: block;
+    align-self: start;
+    background: var(--color-text-deg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bioAcademicContent__place,
+.bioAcademicContent__date{
+    color: var(--color-White);
+}
+
+/*mobile*/
+

@@ -4,7 +4,11 @@
 	--color-tertiary: rgba(96,128,191,1);
 	--color-Black: rgba(32,32,32,1);
 	--color-White: rgba(255,254,253,1);
-	--color-text-deg: linear-gradient(to bottom, rgba(194,69,126,0.761) 20.01%,rgba(96,128,191,0.376) 40.17%,rgba(255,254,253,1) 61.37%,rgba(49,28,84,0.192) 78.19%);
+	--color-text-deg: linear-gradient(157deg, rgba(194,69,126,0.761) -54.99%,rgba(96,128,191,0.376) 55.17%,rgba(255,254,253,1) 77.37%,rgba(49,28,84,0.192) 101.19%);
 	--color-deep-black: rgba(0,0,1,0.700);
+}
+
+body{
+	background-color: black;
 }
 
