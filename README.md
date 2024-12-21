@@ -7,7 +7,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-# Alias and import  routes
+# Alias and import routes
 
 To create comprehensive documentation on setting up a project with custom JavaScript and Vite configuration for aliasing paths, let's break down the provided `jsconfig.json` and `vite.config.js` files. The goal is to simplify import statements in your project, making them more readable and easier to manage by using aliases instead of relative paths.
 
@@ -25,6 +25,9 @@ The `jsconfig.json` file is used in JavaScript projects to configure various asp
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
+      "@ap/*":[
+        "src/assets/png"
+      ],
       "@ct/*": ["src/components/templates/*"],
       "@cg/*": ["src/components/global/*"],
       "@ce/*": ["src/components/pages/*"],
@@ -46,19 +49,20 @@ The `jsconfig.json` file is used in JavaScript projects to configure various asp
 Vite is a build tool that aims to provide a faster and leaner development experience for modern web projects. Here's how to configure path aliases in `vite.config.js` for a React project:
 
 ```js
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import { fileURLToPath, URL } from 'url';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { fileURLToPath, URL } from "url";
 
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@ct': fileURLToPath(new URL('./src/components/templates', import.meta.url)),
-      '@cg': fileURLToPath(new URL('./src/components/global', import.meta.url)),
-      '@ce': fileURLToPath(new URL('./src/components/pages', import.meta.url)),
-      '@cu': fileURLToPath(new URL('./src/components/utils', import.meta.url)),
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
+      "@ap": fileURLToPath(new URL("./src/assets/png")),
+      "@ct": fileURLToPath(new URL("./src/components/templates", import.meta.url)),
+      "@cg": fileURLToPath(new URL("./src/components/global", import.meta.url)),
+      "@ce": fileURLToPath(new URL("./src/components/pages", import.meta.url)),
+      "@cu": fileURLToPath(new URL("./src/components/utils", import.meta.url)),
     },
   },
 });
@@ -72,8 +76,8 @@ export default defineConfig({
 With these configurations, you can now import your components using the defined aliases. For example:
 
 ```jsx
-import MyComponent from '@/components/MyComponent';
-import MyTemplate from '@ct/MyTemplate';
+import MyComponent from "@/components/MyComponent";
+import MyTemplate from "@ct/MyTemplate";
 ```
 
 This setup simplifies imports, making them cleaner and more manageable, especially in large projects.
@@ -81,8 +85,6 @@ This setup simplifies imports, making them cleaner and more manageable, especial
 ### Conclusion
 
 Setting up path aliases in a JavaScript project using Vite and `jsconfig.json` helps improve code maintainability and readability. By following the configurations outlined above, you can achieve a more organized project structure and a smoother development experience.
-
-
 
 # Typography Components
 
@@ -118,13 +120,13 @@ Renders an `<h1>` element.
 
 ```css
 .typeH1 {
-	font-size: clamp(4rem, 4vw + 3rem, 6.188rem);;
-	font-family: Rubik;
-	font-weight: 300;
-	font-style: normal;
-	letter-spacing: -1.5px;
-	text-decoration: none;
-	text-transform: none;
+  font-size: clamp(4rem, 4vw + 3rem, 6.188rem);
+  font-family: Rubik;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: -1.5px;
+  text-decoration: none;
+  text-transform: none;
 }
 ```
 
@@ -160,13 +162,13 @@ Renders an `<h2>` element. Follows the same props and usage as TypeH1.
 
 ```css
 .typeH2 {
-	font-size: clamp(3.063rem, 2vw + 2.5rem, 3.875rem);;
-	font-family: Rubik;
-	font-weight: 300;
-	font-style: normal;
-	letter-spacing: -0.5px;
-	text-decoration: none;
-	text-transform: none;
+  font-size: clamp(3.063rem, 2vw + 2.5rem, 3.875rem);
+  font-family: Rubik;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: -0.5px;
+  text-decoration: none;
+  text-transform: none;
 }
 ```
 
@@ -194,7 +196,6 @@ To apply the `.typeH2` styling, simply add the class to the desired HTML element
 <h2 class="typeH2">Secondary Title Here</h2>
 ```
 
-
 ### TypeH3 - H3 Heading
 
 Renders an `<h3>` element. Follows the same props and usage as TypeH1.
@@ -203,12 +204,12 @@ Renders an `<h3>` element. Follows the same props and usage as TypeH1.
 
 ```css
 .typeH3 {
-	font-size: clamp(2.188rem, 2vw + 1.75rem, 3.063rem);;
-	font-family: Rubik;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	text-transform: none;
+  font-size: clamp(2.188rem, 2vw + 1.75rem, 3.063rem);
+  font-family: Rubik;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
 }
 ```
 
@@ -242,13 +243,13 @@ Renders an `<h4>` element. Follows the same props and usage as TypeH1.
 
 ```css
 .typeH4 {
-	font-size: clamp(1.563rem, 2vw + 1rem, 2.188rem);;
-	font-family: Rubik;
-	font-weight: 400;
-	font-style: normal;
-	letter-spacing: 0.25px;
-	text-decoration: none;
-	text-transform: none;
+  font-size: clamp(1.563rem, 2vw + 1rem, 2.188rem);
+  font-family: Rubik;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+  text-transform: none;
 }
 ```
 
@@ -268,7 +269,6 @@ Renders an `<h4>` element. Follows the same props and usage as TypeH1.
 
 - **Text Transform**: Also set to `none`, preserving the original text case without automatic adjustments to uppercase, lowercase, or capitalized styles.
 
-
 **Usage:**
 
 To apply the `.typeH4` styling, add the class to your desired HTML element as shown in the example below:
@@ -285,12 +285,12 @@ Renders an `<h5>` element. Follows the same props and usage as TypeH1.
 
 ```css
 .typeH5 {
-	font-size: clamp(1.313rem, 2vw + 0.25rem, 1.563rem);
-	font-family: Rubik;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	text-transform: none;
+  font-size: clamp(1.313rem, 2vw + 0.25rem, 1.563rem);
+  font-family: Rubik;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
 }
 ```
 
@@ -308,7 +308,6 @@ Renders an `<h5>` element. Follows the same props and usage as TypeH1.
 
 - **Text Transform**: Also set to `none`, allowing the text to appear exactly as it is typed without automatic conversion to uppercase, lowercase, or capitalized forms. This property respects the original text formatting and ensures consistent presentation.
 
-
 **Usage:**
 
 To apply the `.typeH5` styling to an element, simply include the class in your HTML element. Here is an example using an `<h5>` tag:
@@ -321,18 +320,17 @@ To apply the `.typeH5` styling to an element, simply include the class in your H
 
 Renders an `<h6>` element. Follows the same props and usage as TypeH1.
 
-
 #### Style
 
 ```css
 .TypeH6 {
-	font-size: clamp(1rem, 1vw + 0.5rem, 1.313rem);;
-	font-family: Rubik;
-	font-weight: 500;
-	font-style: normal;
-	letter-spacing: 0.15px;
-	text-decoration: none;
-	text-transform: none;
+  font-size: clamp(1rem, 1vw + 0.5rem, 1.313rem);
+  font-family: Rubik;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.15px;
+  text-decoration: none;
+  text-transform: none;
 }
 ```
 
@@ -351,7 +349,6 @@ Renders an `<h6>` element. Follows the same props and usage as TypeH1.
 - **Text Decoration**: Set to `none`, ensuring that the text does not feature any underlines, overlines, or strike-throughs. This clean presentation focuses attention on the text content itself, without additional visual distractions.
 
 - **Text Transform**: Also set to `none`, allowing the text to display exactly as typed, without automatic conversion to uppercase, lowercase, or capitalized styles. This ensures the intended text formatting is preserved.
-
 
 **Usage:**
 
@@ -373,13 +370,13 @@ Follows the same props and usage as TypeH1.
 
 ```css
 .typeSubTitle1 {
-	font-size: clamp(0.875rem, 2vw - 0.25rem, 1rem);
-	font-family: Rubik;
-	font-weight: 400;
-	font-style: normal;
-	letter-spacing: 0.15px;
-	text-decoration: none;
-	text-transform: none;
+  font-size: clamp(0.875rem, 2vw - 0.25rem, 1rem);
+  font-family: Rubik;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.15px;
+  text-decoration: none;
+  text-transform: none;
 }
 ```
 
@@ -399,7 +396,6 @@ Follows the same props and usage as TypeH1.
 
 - **Text Transform**: Also set to `none`, allowing the subtitle text to display exactly as typed, without automatic conversions to uppercase, lowercase, or capitalized forms. This ensures that the subtitle accurately reflects the intended text formatting.
 
-
 **Usage:**
 
 To use the `.typeSubTitle1` style, add the class to the HTML element designated as a subtitle or secondary text. Here is an example with a `<p>` tag:
@@ -416,13 +412,13 @@ Another subtitle variant. Follows the same props and usage as TypeSubTitle1.
 
 ```css
 .typeSubTitle2 {
-	font-size: clamp(0.75rem, 2vw - 0.25rem, 0.875rem);
-	font-family: Rubik;
-	font-weight: 500;
-	font-style: normal;
-	letter-spacing: 0.1px;
-	text-decoration: none;
-	text-transform: none;
+  font-size: clamp(0.75rem, 2vw - 0.25rem, 0.875rem);
+  font-family: Rubik;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.1px;
+  text-decoration: none;
+  text-transform: none;
 }
 ```
 
@@ -441,7 +437,6 @@ Another subtitle variant. Follows the same props and usage as TypeSubTitle1.
 - **Text Decoration**: Specified as `none`, meaning the subtitle text is free from underlines, overlines, or strike-throughs. This clean styling approach emphasizes the content itself without unnecessary visual distractions.
 
 - **Text Transform**: Also set to `none`, allowing the subtitle to be displayed exactly as typed, without automatic case transformations. This respects the intended formatting, ensuring the subtitle accurately conveys the desired message.
-
 
 **Usage:**
 
@@ -463,13 +458,13 @@ Follows the same props and usage as TypeH1.
 
 ```css
 .typeBody1 {
-	font-size: clamp(0.875rem, 2vw - 0.25rem, 1rem);;
-	font-family: Fira Code;
-	font-weight: 400;
-	font-style: normal;
-	letter-spacing: 0.5px;
-	text-decoration: none;
-	text-transform: none;
+  font-size: clamp(0.875rem, 2vw - 0.25rem, 1rem);
+  font-family: Fira Code;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: none;
 }
 ```
 
@@ -489,13 +484,15 @@ Follows the same props and usage as TypeH1.
 
 - **Text Transform**: Also set to `none`, allowing the text to display exactly as typed. This setting respects the original formatting, ensuring that case usage is preserved and the text conveys the intended message accurately.
 
-
 **Usage:**
 
 To apply the `.typeBody1` styling to an element, include the class in your HTML element like so:
 
 ```html
-<p class="typeBody1">This is an example of body text styled with .typeBody1, demonstrating readability and comfort for long-form content.</p>
+<p class="typeBody1">
+  This is an example of body text styled with .typeBody1, demonstrating
+  readability and comfort for long-form content.
+</p>
 ```
 
 ### TypeBody2 - Body Text 2
@@ -506,13 +503,13 @@ Another body text variant. Follows the same props and usage as TypeBody1.
 
 ```css
 .typeBody2 {
-	font-size: clamp(0.75rem, 2vw - 0.25rem, 0.875rem);
-	font-family: Fira Code;
-	font-weight: 400;
-	font-style: normal;
-	letter-spacing: 0.25px;
-	text-decoration: none;
-	text-transform: none;
+  font-size: clamp(0.75rem, 2vw - 0.25rem, 0.875rem);
+  font-family: Fira Code;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+  text-transform: none;
 }
 ```
 
@@ -532,16 +529,19 @@ Another body text variant. Follows the same props and usage as TypeBody1.
 
 - **Text Transform**: Also set to `none`, preserving the text's original case without automatic alterations. This ensures the intended emphasis and formatting are maintained, providing a consistent and clear message.
 
-
 **Usage:**
 
 To utilize the `.typeBody2` styling, simply add the class to your HTML element in the desired location. Here is an example using a `<span>` tag within a larger paragraph:
 
 ```html
-<p>This is the primary body text, <span class="typeBody2">and this is secondary text styled with .typeBody2, offering a nuanced but readable contrast.</span></p>
+<p>
+  This is the primary body text,
+  <span class="typeBody2"
+    >and this is secondary text styled with .typeBody2, offering a nuanced but
+    readable contrast.</span
+  >
+</p>
 ```
-
-
 
 ## Special Types
 
@@ -555,13 +555,13 @@ Follows the same props and usage as TypeH1.
 
 ```css
 .typeButton {
-	font-size: clamp(0.75rem, 2vw - 0.25rem, 0.875rem);;
-	font-family: Fira Code;
-	font-weight: 400;
-	font-style: normal;
-	letter-spacing: 1.25px;
-	text-decoration: none;
-	text-transform: uppercase;
+  font-size: clamp(0.75rem, 2vw - 0.25rem, 0.875rem);
+  font-family: Fira Code;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1.25px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 ```
 
@@ -581,7 +581,6 @@ Follows the same props and usage as TypeH1.
 
 - **Text Transform**: Set to `uppercase`, automatically converting all button text to capital letters. This transformation adds visual impact and consistency, making buttons more noticeable and uniform across the interface.
 
-
 **Usage:**
 
 To apply the `.typeButton` styling to an element intended as a button, simply add the class to your HTML button or link element. Here is an example with a `<button>` tag:
@@ -600,13 +599,13 @@ Follows the same props and usage as TypeH1.
 
 ```css
 .typeCaption {
-	font-size: 12px;
-	font-family: Fira Code;
-	font-weight: 400;
-	font-style: normal;
-	letter-spacing: 0.4px;
-	text-decoration: none;
-	text-transform: none;
+  font-size: 12px;
+  font-family: Fira Code;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  text-transform: none;
 }
 ```
 
@@ -626,13 +625,14 @@ Follows the same props and usage as TypeH1.
 
 - **Text Transform**: Also set to `none`, allowing the caption text to maintain its original case without automatic conversions. This setting respects the intended text formatting, ensuring accurate and consistent presentation.
 
-
 **Usage:**
 
 To apply the `.typeCaption` styling to an element, simply include the class in your HTML element as shown below:
 
 ```html
-<figcaption class="typeCaption">This is an example of a caption styled with .typeCaption.</figcaption>
+<figcaption class="typeCaption">
+  This is an example of a caption styled with .typeCaption.
+</figcaption>
 ```
 
 ### TypeOverline - Overline Text
@@ -645,19 +645,19 @@ Follows the same props and usage as TypeH1.
 
 ```css
 .typeOverline {
-	font-size: 10px;
-	font-family: Inter;
-	font-weight: 400;
-	font-style: normal;
-	letter-spacing: 1.5px;
-	text-decoration: none;
-	text-transform: uppercase;
+  font-size: 10px;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 ```
 
 ##### Properties
 
-- **Font Size**: Set at a modest `10px`, this small size is specifically chosen to ensure the text serves as an overline or subtle header without competing with the main content for attention. 
+- **Font Size**: Set at a modest `10px`, this small size is specifically chosen to ensure the text serves as an overline or subtle header without competing with the main content for attention.
 
 - **Font Family**: Utilizes `Inter`, a highly versatile sans-serif typeface known for its readability and clarity across various sizes and weights. Its geometric yet friendly appearance makes it suitable for contemporary digital environments.
 
@@ -671,7 +671,6 @@ Follows the same props and usage as TypeH1.
 
 - **Text Transform**: Set to `uppercase`, this transformation elevates the text's visual impact and ensures uniformity, making it more noticeable and easier to read as an overline or categorization label.
 
-
 **Usage:**
 
 To apply the `.typeOverline` styling to an element, simply add the class to your desired HTML element. Here's how it could be used in a practical example:
@@ -681,7 +680,3 @@ To apply the `.typeOverline` styling to an element, simply add the class to your
 ```
 
 # Button Components
-
-
-
-
