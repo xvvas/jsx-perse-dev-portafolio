@@ -680,8 +680,5 @@ To apply the `.typeOverline` styling to an element, simply add the class to your
 <div class="typeOverline">Section Title</div>
 ```
 
-## Prop Notes
-
-Each component is designed to be easily integrated into your project, allowing for consistent typography throughout your application. Remember to apply additional styles via the `className` prop as needed to match your design requirements.
 
 
