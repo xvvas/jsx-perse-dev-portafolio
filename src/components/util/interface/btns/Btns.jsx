@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 
 //router
-import { Link } from "react-router-dom";
+import { Link, useLocation } from 'react-router-dom';
 
 //css
 import "./Btns.css"
@@ -53,10 +53,14 @@ BtnLink .propTypes = {
 }
 
 export function BtnNav({className, label, to}){
+
+    const location = useLocation();
+    const selected = location.pathname === to ? "--selected" : "";
+
     return(
-        <Link to={to} className={`BtnNav ${className}`}>
+        <Link to={to} className={`BtnNav${selected} ${className}`}>
             <TypeButton>{label}</TypeButton>
-            <div className='hoverline'></div>
+            <div className={`btnNav__line${selected} `}></div>
         </Link>
     )
 }

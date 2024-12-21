@@ -6,8 +6,8 @@ import Blog from "@ce/landing/Blog"
 const routes = [
     { path: "/", name: "", element: Home },
     { path: "/Bio", name: "Bio", element:Bio },
-    { path: "/Work", name: "Work", element:Work },
-    { path: "/blog", name: "Blog", element:Blog}
+    { path: "/Proyectos", name: "Proyectos", element:Work },
+    { path: "/Blog", name: "Blog", element:Blog}
 ]
 
 export default routes;

@@ -1,8 +1,9 @@
 .ContainerNav{
     width: -webkit-fill-available;
-    height: 5vh;
-    padding: 0px clamp(2rem, 35vw - 15rem, 12.375rem);
-    background-color: rgb(59, 59, 59);
+    height: 5.822vh;
+    padding: 0px clamp(2rem, 30vw - 13rem, 12rem);
+    /*padding: 0px clamp(2rem, 35vw - 15rem, 12.375rem);*/
+    background-color: var(--color-deep-black)
 }
 
 .ContainerFooter{

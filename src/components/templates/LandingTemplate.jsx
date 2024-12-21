@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 
 //global
 import LandingFooter from "@cg/landingFooter/landingFooter";
-import LandingNav from "@cg/landingNav/landingNav";
+import LandingNav from "@cg/landingNav/LandingNav";
 
 //util
 import routes from "@cu/routes/routes";

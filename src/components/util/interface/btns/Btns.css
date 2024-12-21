@@ -1,11 +1,11 @@
-.BtnArrowDown{
+.BtnArrowDown {
     background: transparent;
     outline: none;
     border-color: transparent;
 }
 
 .BtnOutline,
-.BtnLink{
+.BtnLink {
     outline: none;
     color: var(--color-White);
     padding: 0.2rem 1.5rem;
@@ -15,8 +15,53 @@
 }
 
 .BtnOutline:hover,
-.BtnLink:hover{
+.BtnLink:hover {
     outline: none;
     color: var(--color-White);
     background: var(--color-secondary);
+}
+
+.BtnNav,
+.BtnNav--selected {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    outline: none;
+    padding: 0.2rem 1.5rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    background: transparent;
+}
+.BtnNav{
+    color: var(--color-White);
+}
+
+.BtnNav--selected{
+    color: var(--color-tertiary);
+}
+
+.btnNav__line,
+.btnNav__line--selected {
+    width: 0.5rem;
+    /* Línea inicial */
+    height: 3px;
+    /* Grosor de la línea */
+    border-radius: 1rem;
+    transition: width 0.3s ease;
+    /* Suavidad en la animación */
+}
+
+.btnNav__line {
+    background-color: var(--color-secondary);
+}
+
+.btnNav__line--selected {
+    background-color: var(--color-tertiary);
+}
+
+
+
+.BtnNav:hover .btnNav__line {
+    width: 100%;
+    /* Expande al ancho completo en hover */
 }
