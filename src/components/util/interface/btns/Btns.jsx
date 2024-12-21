@@ -51,3 +51,12 @@ BtnLink .propTypes = {
     label: PropTypes.string.isRequired,
     to: PropTypes.string.isRequired,
 }
+
+export function BtnNav({className, label, to}){
+    return(
+        <Link to={to} className={`className`}>
+            <TypeButton>{label}</TypeButton>
+            <div className='hoverline'></div>
+        </Link>
+    )
+}
