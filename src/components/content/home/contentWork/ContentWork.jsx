@@ -13,7 +13,7 @@ export default function ContentWork() {
                 <TypeH3>Un poco de mi trabajo</TypeH3>
             </div>
             <div className="contentWork__cards">
-                <ContainerCard className="contentWork__card">
+                <ContainerCard className="contentWork__card" animation={"fade-up"} duration={"2000"}>
                     <div className="contentWork__cardHead">
                         <TypeH4>Rodriguez Law Group</TypeH4>
                         <BtnLink to={"https://rodriguez-lawgroup.com/"} label={"ver"} />
@@ -24,7 +24,7 @@ export default function ContentWork() {
                         forms para el formulario de contacto y la librería AOS para las animaciones.
                     </TypeBody2>
                 </ContainerCard>
-                <ContainerCard className="contentWork__card">
+                <ContainerCard className="contentWork__card" animation={"fade-up"} duration={"2000"}>
                     <div className="contentWork__cardHead">
                         <TypeH4>Printperfect</TypeH4>
                         <BtnLink to={"https://www.printperfect.ai/"} label={"ver"} />
@@ -35,7 +35,7 @@ export default function ContentWork() {
                         interfaces internas.
                     </TypeBody2>
                 </ContainerCard>
-                <ContainerCard className="contentWork__card">
+                <ContainerCard className="contentWork__card" animation={"fade-up"} duration={"2000"}>
                     <div className="contentWork__cardHead">
                         <TypeH4>Nearshoredesign</TypeH4>
                         <BtnLink to={"https://www.nearshoredesign.co/"} label={"ver"} />

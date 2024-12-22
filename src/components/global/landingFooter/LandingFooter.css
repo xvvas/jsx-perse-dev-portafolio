@@ -1,7 +1,8 @@
 .LandingFooter{
-    background-color: black;
+    background-color: black !important;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around !important;
+    align-items: center;
 }
 
 .LandingFooter>.typeOverline{
