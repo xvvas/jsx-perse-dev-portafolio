@@ -5,6 +5,7 @@
 	--color-Black: rgba(32,32,32,1);
 	--color-White: rgba(255,254,253,1);	
 	--color-text-deg: linear-gradient(82.34deg, #c2457e 20%, #6080bf 40%, #fffefd 61%, #311c54 78%);
+	--color-text-deg-alternative: linear-gradient(90.34deg, #c2457e 2%, #6080bf 10%, #fffefd 100%, #311c54 100%);
 	--color-deep-black: rgba(0,0,1,0.700);
 }
 

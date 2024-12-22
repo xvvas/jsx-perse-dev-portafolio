@@ -2,6 +2,13 @@
     flex-direction: column;
     flex-direction: column;
     justify-content: center;
+    background-image: url(../../../../assets/png/bio_hero.jpg);
+    background-color: black;
+    background-size: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    box-shadow:
+    inset 0 -60px 30px rgba(0, 0, 0, 1);
 }
 
 .bioMainContent__content{
@@ -13,7 +20,7 @@
 }
 
 .bioMainContent__content>.typeH1{
-    background: var(--color-text-deg);
+    background: var(--color-text-deg-alternative);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
