@@ -13,7 +13,7 @@ export default function MainContent() {
         <ContainerMain className="MainContent">
             <div className="mainContent__content">
                 <TypeH6>¡Hola! Mi nombre es Miguel</TypeH6>
-                <TypeH1>Desarrollador web <br/> en Medellín</TypeH1>
+                <TypeH1>Desarrollador web <br/> en<strong className="mainContent__strong"> Medellín</strong></TypeH1>
             </div>
             <div className="mainContent__initScroll">
                 <BtnArrowDown label="Conóceme"/>

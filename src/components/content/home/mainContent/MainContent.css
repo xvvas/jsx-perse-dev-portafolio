@@ -1,3 +1,12 @@
+.MainContent{
+    background-image: url(../../../../assets/png/home_hero.jpg);
+    background-color: black;
+    background-size: 90%;
+    background-position:center;
+    background-repeat: no-repeat
+}
+
+
 
 .mainContent__content{
     flex: 1;
@@ -5,7 +14,14 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    background: gainsboro;
+    color: var(--color-White);
+}
+
+.mainContent__strong{
+    background: var(--color-text-deg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .mainContent__initScroll {
