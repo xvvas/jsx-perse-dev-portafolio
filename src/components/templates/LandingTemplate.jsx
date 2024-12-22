@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 
 //global
-import LandingFooter from "@cg/landingFooter/landingFooter";
+import LandingFooter from "@cg/landingFooter/LandingFooter";
 import LandingNav from "@cg/landingNav/LandingNav";
 
 //util

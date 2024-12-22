@@ -1,0 +1,13 @@
+.LandingFooter{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.LandingFooter>.typeOverline{
+    color: var(--color-White);
+}
+
+.landingFooter__strong{
+    color: var(--color-tertiary);
+}

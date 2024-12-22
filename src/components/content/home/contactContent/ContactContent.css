@@ -1,6 +1,11 @@
 .ContactContent{
     justify-content: center;
     align-items: center;
+    background-image: url(../../../../assets/png/contact_home.jpg);
+    background-color: black;
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat
     
 }
 
@@ -8,6 +13,21 @@
 .contactContent__content{
     display: flex;
     padding: 0rem 5rem;
+}
+
+.contactContent__card>.typeSubTitle1{
+    background: var(--color-text-deg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contactContent__card>.typeBody2{
+    color: var(--color-White);
+}
+
+.contactContent__quote>.typeH5{
+    color: var(--color-White);
 }
 
 .contactContent__card{
