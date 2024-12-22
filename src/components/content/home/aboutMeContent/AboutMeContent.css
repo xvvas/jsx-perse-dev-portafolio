@@ -13,14 +13,14 @@
     flex-direction: column;
 }
 
-.aboutMeContent__head>.typeH2{
+.aboutMeContent__title>.typeH2{
     background: var(--color-text-deg);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.aboutMeContent__head>.typeBody2{
+.aboutMeContent__subxt>.typeBody2{
     color: var(--color-White);
 }
 
