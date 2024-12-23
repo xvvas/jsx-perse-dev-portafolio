@@ -78,6 +78,11 @@
     .aboutMeContent__cards{
         flex-direction: column;
     } 
+    .AboutMeContent{
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat
+    }
 }
 
 
