@@ -2,7 +2,7 @@
 import "./BioProfesionalPathContent.css"
 
 //util
-import { BtnArrowDown } from "@cu/interface/btns/Btns"
+//import { BtnArrowDown } from "@cu/interface/btns/Btns"
 import { ContainerCard, ContainerSection } from "@cu/containers/Containers"
 import { TypeBody2, TypeH3, TypeH4, TypeSubTitle2 } from "@cu/fonts/Type"
 

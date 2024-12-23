@@ -1,5 +1,4 @@
-//react
-import { useState } from "react";
+
 //css
 import "./LandingNav.css"
 //util

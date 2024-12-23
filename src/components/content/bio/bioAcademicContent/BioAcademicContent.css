@@ -45,7 +45,7 @@
 .bioAcademicContent__title{
     display: block;
     align-self: start;
-    background: var(--color-text-deg);
+    background: var(--color-text-deg-alternative);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -58,3 +58,13 @@
 
 /*mobile*/
 
+@media(max-width: 912px){
+    .BioAcademicContent{
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    .bioAcademicContent__content>.bioAcademicContent__card{
+        width: 100%;
+    }
+}

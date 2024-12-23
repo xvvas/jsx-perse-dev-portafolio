@@ -13,7 +13,7 @@
 }
 
 .contentWork__head>.typeH3{
-    background: var(--color-text-deg);
+    background: var(--color-text-deg-mobile);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -50,4 +50,17 @@
 
 .contentWork__card>.typeBody2{
     color: var(--color-White);
+}
+
+@media(max-width: 912px){
+    .contentWork__cardHead{
+        width: -webkit-fill-available;
+        width: -moz-available;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 1rem;
+    }
 }

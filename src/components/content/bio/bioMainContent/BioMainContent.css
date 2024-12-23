@@ -46,3 +46,18 @@
 .bioMainContent__initScroll>button>svg>path{
     stroke: var(--color-White);
 }
+
+@media(max-width: 912px){
+    .BioMainContent {
+        background-size: cover;
+        background-position:left;
+        background-repeat: no-repeat;
+    }
+
+    .bioMainContent__title>.typeH1{
+        background: var(--color-text-deg-mobile);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
