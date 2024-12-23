@@ -2,6 +2,11 @@
     flex-direction: column;
     flex-direction: column;
     justify-content: center;
+    background-image: url(../../../../assets/png/work_main.jpg);
+    background-color: black;
+    background-size: 100%;
+    background-position:center;
+    background-repeat: no-repeat
 }
 
 .workMainContent__content{
@@ -15,7 +20,7 @@
 
 .workMainContent__tittle{
     text-align: center;
-    background: var(--color-text-deg);
+    background: var(--color-text-deg-alternative);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
