@@ -16,4 +16,5 @@ export default defineConfig({
       '@cc': fileURLToPath(new URL('./src/components/content', import.meta.url)),
     },
   },
+  extensions: ['.js', '.jsx', '.ts', '.tsx']
 });
