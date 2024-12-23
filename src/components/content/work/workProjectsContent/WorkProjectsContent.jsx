@@ -97,13 +97,13 @@ export default function WorkProjectsContent() {
 		<ContainerSection className="WorkProjectsContent">
 			{content.map((item, key) => (
 				<div className="workProjectsContent__section" key={key}>
-					<div className="workProjectsContent__head">
+					<div className="workProjectsContent__head" data-aos="fade-up" data-aos-duration="2000">
 						{item.title && <TypeH3 className="workProjectsContent__title">{item.title}</TypeH3>}
 						<TypeH4 className="workProjectsContent__subtitle">{item.subtitle}</TypeH4>
 					</div>
 					<div className="workProjectsContent__body">
 						{item.projects.map((project, index) => (
-							<ContainerCard key={index} className="workProjectsContent__card">
+							<ContainerCard key={index} className="workProjectsContent__card" animation={"fade-up"} duration={"2000"} >
 								<TypeH4 className="workProjectsContent__title--card">{project.title}</TypeH4>
 								<div className="workProjectsContent__technologies">
 									{project.technologies.map((tech, index) => (
@@ -121,9 +121,12 @@ export default function WorkProjectsContent() {
 					</div>
 				</div>
 			))}
+			{/*
 			<div className="workProjectsContent__initScroll">
                 <BtnArrowDown label="Conóceme"/>
             </div>
+			*/}
+
 		</ContainerSection>
 	)
 }

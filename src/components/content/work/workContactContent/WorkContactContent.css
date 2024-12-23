@@ -2,6 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../../../../assets/png/work_content.jpg);
+    background-color: black;
+    background-size: 100%;
+    background-position:center;
+    background-repeat: no-repeat
 }
 
 .workContactContent__card{

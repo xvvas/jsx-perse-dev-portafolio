@@ -2,6 +2,7 @@
     flex-direction: column;
     flex-direction: column;
     justify-content: center;
+    background-color: var(--color-deep-black);
 }
 
 .workDescriptionContent__content{
@@ -13,14 +14,14 @@
     gap: 1rem;
 }
 
-.workDescriptionContent__title{
+.workDescriptionContent__title>.typeH2{
     background: var(--color-text-deg);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.workDescriptionContent__txt{
+.workDescriptionContent__txt>.typeBody1{
     color: var(--color-White);
 }
 
