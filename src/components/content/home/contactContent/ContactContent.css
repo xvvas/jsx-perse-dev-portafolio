@@ -61,4 +61,10 @@
     .contactContent__quote>h5{
         width: 100%;
     }
+    .ContactContent{
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat
+        
+    }
 }
