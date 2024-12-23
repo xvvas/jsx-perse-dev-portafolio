@@ -74,9 +74,9 @@ BtnNav.propTypes = {
     onClick: PropTypes.func
 }
 
-export function BtnMenu({ modifier , isOpen, setIsOpen}){
+export function BtnMenu({ modifier , isOpen,anim, setIsOpen, setAnim}){
     
-    const [anim, setAnim] = useState(false)
+    
 
     const handleBtn = () => {
         setAnim(!anim)
@@ -98,6 +98,8 @@ export function BtnMenu({ modifier , isOpen, setIsOpen}){
 BtnMenu.propTypes = {
     isOpen: PropTypes.bool.isRequired,
     setIsOpen: PropTypes.func.isRequired,
-    modifier: PropTypes.string
+    modifier: PropTypes.string,
+    anim: PropTypes.bool.isRequired,
+    setAnim: PropTypes.func.isRequired
 }
 

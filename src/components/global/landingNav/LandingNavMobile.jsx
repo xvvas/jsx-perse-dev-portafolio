@@ -14,7 +14,12 @@ export default function LandingNavMobile() {
 
 
     const [isOpen, setIsOpen] = useState(false)
+    const [anim, setAnim] = useState(true)
 
+    const handleNav = () => {
+        setIsOpen(!isOpen)
+        setAnim(!anim)
+    }
 
     return (
         <ContainerNav className={`LandingNavMobile${isOpen ? "--open" : "--close"}`}>
@@ -30,6 +35,8 @@ export default function LandingNavMobile() {
                         label="Menú"
                         isOpen={isOpen}
                         setIsOpen={setIsOpen}
+                        anim={anim}
+                        setAnim={setAnim}
                     />
                 </div>
             </div>
@@ -41,7 +48,7 @@ export default function LandingNavMobile() {
                         to={value.to}
                         isOpen={isOpen}
                         setIsOpen={setIsOpen}
-                        onClick={() => setIsOpen(false)}
+                        onClick={() => handleNav()}
                     />
                 ))}
             </nav>
