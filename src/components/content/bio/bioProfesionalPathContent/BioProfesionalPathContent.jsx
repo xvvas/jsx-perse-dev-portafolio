@@ -47,9 +47,11 @@ export default function BioProfesionalPathContent() {
                     </ContainerCard>
                 ))}
             </div>
-            <div className="bioProfesionalPathContent__initScroll">
+            {/*
+                <div className="bioProfesionalPathContent__initScroll">
                     <BtnArrowDown label="Conóceme" />
-            </div>
+                </div>
+            */}
         </ContainerSection>
     )
 }

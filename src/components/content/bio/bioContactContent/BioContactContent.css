@@ -2,6 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../../../../assets/png/bio_contact.jpg);
+    background-color: black;
+    background-size: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
 }
 
 .bioContactContent__card{

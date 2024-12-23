@@ -4,7 +4,7 @@ import "./BioAboutMeContent.css"
 //utils
 import { TypeBody1, TypeH2 } from "@cu/fonts/Type";
 import { ContainerSection } from "@cu/containers/Containers";
-import { BtnArrowDown } from "@/components/util/interface/btns/Btns";
+//import { BtnArrowDown } from "@/components/util/interface/btns/Btns";
 
 export default function BioAboutMeContent() {
     return (
@@ -18,9 +18,12 @@ export default function BioAboutMeContent() {
                     permite tener un equilibrio entre mis dos pasiones, el diseño y la tecnología.
                 </TypeBody1>
             </div>
+            {/*
             <div className="bioAboutMeContent__initScroll">
                 <BtnArrowDown label="Continua" />
             </div>
+            */}
+            
         </ContainerSection>
     )
 }

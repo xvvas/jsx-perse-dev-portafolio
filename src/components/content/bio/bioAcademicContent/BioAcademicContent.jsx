@@ -88,9 +88,7 @@ export default function BioAcademicContent() {
                             <BtnLink label={"Consultar"} to={card.URL} />
                         }
                     </ContainerCard>
-                ))
-
-                }
+                ))}
             </div>
         </ContainerSection>
     )
