@@ -72,7 +72,6 @@
     height: 100%;
     display: grid;
     place-content: center;
-    position: relative;
     padding: 0rem;
     border-radius: 1rem;
     z-index: 25;

@@ -1,9 +1,15 @@
 .ContainerNav {
     width: -webkit-fill-available;
+    width: -moz-available;
     height: 5.822vh;
     padding: 0px clamp(2rem, 30vw - 13rem, 12rem);
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
     /*padding: 0px clamp(2rem, 35vw - 15rem, 12.375rem);*/
-    background-color: var(--color-deep-black)
+    background-color: var(--color-deep-black);
+    z-index: 20;
 }
 
 .ContainerFooter {
@@ -18,6 +24,7 @@
     min-height: 95vh;
     display: flex;
     flex-direction: column;
+    margin-top: 5.822vh;
     padding: 0px clamp(2rem, 30vw - 13rem, 12rem);
     background-color: rgb(12, 12, 12);
 }

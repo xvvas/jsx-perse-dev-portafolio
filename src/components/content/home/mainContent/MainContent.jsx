@@ -16,7 +16,7 @@ export default function MainContent() {
                     <TypeH6 >¡Hola! Mi nombre es Miguel</TypeH6>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="2000">
-                    <TypeH1 dataAos={"fade-left"}>Desarrollador web <br /> en<strong className="mainContent__strong"> Medellín</strong></TypeH1>
+                    <TypeH1 dataAos={"fade-left"}>Desarrollador web  en<strong className="mainContent__strong"> Medellín</strong></TypeH1>
                 </div>
             </div>
             {/* 

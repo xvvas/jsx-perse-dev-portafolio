@@ -40,7 +40,7 @@ export default function LandingNav() {
 						>
 						</img>
 					</div>
-					<div className="landingNav__actions">
+					<nav className="landingNav__actions">
 						{navLinks?.map((value, index) => (
 							<BtnNav
 								key={index}
@@ -49,7 +49,7 @@ export default function LandingNav() {
 							/>
 						))}
 
-					</div>
+					</nav>
 				</div>
 			)}
 			{mobileView && (
@@ -68,7 +68,7 @@ export default function LandingNav() {
 							setIsOpen={setIsOpen}
 						/>
 					</div>
-					<div className={`landingNav__links${isOpen ? "--open" : "--close"}`}> 
+					<nav className={`landingNav__links${isOpen ? "--open" : "--close"}`}> 
 						{navLinks?.map((value, index) => (
 							<BtnNav
 								key={index}
@@ -78,7 +78,7 @@ export default function LandingNav() {
 								setIsOpen={setIsOpen}
 							/>
 						))}
-					</div>
+					</nav>
 				</div>
 
 			)}

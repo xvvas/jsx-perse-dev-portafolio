@@ -8,6 +8,7 @@
 
 
 
+
 .mainContent__content{
     flex: 1;
     display: flex;
@@ -39,4 +40,12 @@
 
 .mainContent__initScroll>button>svg>path{
     stroke: var(--color-White);
+}
+
+@media(max-width: 912px){
+    .MainContent{
+        background-size: cover;
+        background-position:bottom;
+        background-repeat: no-repeat
+    }
 }
