@@ -1,4 +1,5 @@
-
+//react
+import { useState } from "react";
 //css
 import "./LandingNav.css"
 //util
@@ -13,12 +14,7 @@ import brand from "@ap/nav_brandImg.png"
 
 
 
-export default function LandingNavMobile() {
-
-
-	
-
-
+export default function LandingNav() {
 
 
 	return (
