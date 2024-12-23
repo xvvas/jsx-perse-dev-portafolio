@@ -71,7 +71,7 @@ export default function BioAcademicContent() {
             </div>
             <div className="bioAcademicContent__content">
                 {cardsInfo.map((card, key) => (
-                    <ContainerCard key={key} className="bioAcademicContent__card">
+                    <ContainerCard key={key} className="bioAcademicContent__card" animation={"fade-up"} duration={"2000"}>
                         <TypeSubTitle1 className="bioAcademicContent__title">
                             {card.title}
                         </TypeSubTitle1>

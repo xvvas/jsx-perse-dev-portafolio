@@ -34,7 +34,7 @@ export default function BioProfesionalPathContent() {
             <div className="bioProfesionalPathContent__content">
                 <TypeH3 className="bioProfesionalPathContent__title">Mi Recorrido Laboral</TypeH3>
                 {cardContent.map((item, index) => (
-                    <ContainerCard key={index} className="bioProfesionalPathContent__card">
+                    <ContainerCard key={index} className="bioProfesionalPathContent__card" animation={"fade-up"} duration={"2000"}>
                         <div className="bioProfesionalPathContent__cardHead">
                             <TypeH4>{item.title}</TypeH4>
                             <TypeSubTitle2>{item.subtitle}</TypeSubTitle2>

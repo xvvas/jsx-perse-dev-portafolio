@@ -19,14 +19,14 @@
     align-items: center;
 }
 
-.bioMainContent__content>.typeH1{
+.bioMainContent__title>.typeH1{
     background: var(--color-text-deg-alternative);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.bioMainContent__content>.typeSubTitle1{
+.bioMainContent__subtitle>.typeSubTitle1{
     color: var(--color-White);
 }
 
