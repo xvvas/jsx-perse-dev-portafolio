@@ -4,7 +4,7 @@ import "./ContentWork.css"
 //utils
 import { ContainerCard, ContainerSection } from "@cu/containers/Containers";
 import { TypeBody2, TypeH3, TypeH4 } from "@cu/fonts/Type";
-import { BtnArrowDown, BtnOutline } from "@cu/interface/btns/Btns";
+import { BtnLink } from "@cu/interface/btns/Btns";
 
 export default function ContentWork() {
     return (
@@ -13,10 +13,10 @@ export default function ContentWork() {
                 <TypeH3>Un poco de mi trabajo</TypeH3>
             </div>
             <div className="contentWork__cards">
-                <ContainerCard className="contentWork__card">
+                <ContainerCard className="contentWork__card" animation={"fade-up"} duration={"2000"}>
                     <div className="contentWork__cardHead">
                         <TypeH4>Rodriguez Law Group</TypeH4>
-                        <BtnOutline label={"ver"} />
+                        <BtnLink to={"https://rodriguez-lawgroup.com/"} label={"ver"} />
                     </div>
                     <TypeBody2>
                         Landing page realizada para la firma de abogados Rodriguez Law Group en Miami.
@@ -24,22 +24,10 @@ export default function ContentWork() {
                         forms para el formulario de contacto y la librería AOS para las animaciones.
                     </TypeBody2>
                 </ContainerCard>
-                <ContainerCard className="contentWork__card">
-                    <div className="contentWork__cardHead">
-                        <TypeH4>Miami Regenerative Medicine</TypeH4>
-                        <BtnOutline label={"ver"} />
-                    </div>
-                    <TypeBody2>
-                        Este proyecto, si bien hace parte de un proceso más grande, inicialmente busca el posicionamiento en buscadores,
-                        logrando pasar de &quot;No-index&quot; al puesto tres con la palabra clave &quot;miami regenerative medicine&quot;,
-                        esto se logró inicialmente gracias a una auditoria inicial que combinada de un análisis de tendencias,
-                        con apoyo de la herramienta SE ranking permitió realizar correcciones y mejoras a nivel de SEO técnico y semántico.
-                    </TypeBody2>
-                </ContainerCard>
-                <ContainerCard className="contentWork__card">
+                <ContainerCard className="contentWork__card" animation={"fade-up"} duration={"2000"}>
                     <div className="contentWork__cardHead">
                         <TypeH4>Printperfect</TypeH4>
-                        <BtnOutline label={"ver"} />
+                        <BtnLink to={"https://www.printperfect.ai/"} label={"ver"} />
                     </div>
                     <TypeBody2>
                         Proyecto enfocado en la creación de camisetas y estampados por medio de la ayuda de IA, el proyecto fue realizado con React.js y desplegado en AWS
@@ -47,19 +35,22 @@ export default function ContentWork() {
                         interfaces internas.
                     </TypeBody2>
                 </ContainerCard>
-                <ContainerCard className="contentWork__card">
+                <ContainerCard className="contentWork__card" animation={"fade-up"} duration={"2000"}>
                     <div className="contentWork__cardHead">
                         <TypeH4>Nearshoredesign</TypeH4>
-                        <BtnOutline label={"ver"} />
+                        <BtnLink to={"https://www.nearshoredesign.co/"} label={"ver"} />
                     </div>
                     <TypeBody2>
                         Landign page creada para NDS co, Este proyecto fue hecho con React.js y desplegado en Vercel
                     </TypeBody2>
                 </ContainerCard>
             </div>
-            <div className="contentWork__initScroll">
+            {/*
+                            <div className="contentWork__initScroll">
                 <BtnArrowDown label="Ver más" />
             </div>
+            
+            */}
         </ContainerSection>
     )
 }

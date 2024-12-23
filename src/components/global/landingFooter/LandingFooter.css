@@ -1,0 +1,14 @@
+.LandingFooter{
+    background-color: black !important;
+    display: flex;
+    justify-content: space-around !important;
+    align-items: center;
+}
+
+.LandingFooter>.typeOverline{
+    color: var(--color-White);
+}
+
+.landingFooter__strong{
+    color: var(--color-tertiary);
+}

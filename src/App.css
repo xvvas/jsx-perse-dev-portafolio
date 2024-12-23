@@ -3,9 +3,12 @@
 	--color-secondary: rgba(217,74,140,1);
 	--color-tertiary: rgba(96,128,191,1);
 	--color-Black: rgba(32,32,32,1);
-	--color-White: rgba(255,254,253,1);
-	--color-text-deg: linear-gradient(157deg, rgba(194,69,126,0.761) -54.99%,rgba(96,128,191,0.376) 55.17%,rgba(255,254,253,1) 77.37%,rgba(49,28,84,0.192) 101.19%);
-	--color-deep-black: rgba(0,0,1,0.700);
+	--color-White: rgba(255,254,253,1);	
+	--color-text-deg: linear-gradient(82.34deg, #c2457e 20%, #6080bf 40%, #fffefd 61%, #311c54 78%);
+	--color-text-deg-alternative: linear-gradient(90.34deg, #c2457e 2%, #6080bf 10%, #fffefd 100%, #311c54 100%);
+	--color-text-deg-mobile: linear-gradient(82.34deg, #c2457e 20%, #6080bf 40%, #fffefd 100%, #311c54 1%);
+	--color-deep-black: rgba(0,0,1, 0.7);
+	--anim-time: 1s;
 }
 
 body{

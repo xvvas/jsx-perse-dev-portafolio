@@ -2,6 +2,13 @@
     flex-direction: column;
     flex-direction: column;
     justify-content: center;
+    background-image: url(../../../../assets/png/bio_hero.jpg);
+    background-color: black;
+    background-size: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    box-shadow:
+    inset 0 -60px 60px rgba(0, 0, 0, 1);
 }
 
 .bioMainContent__content{
@@ -12,14 +19,14 @@
     align-items: center;
 }
 
-.bioMainContent__content>.typeH1{
-    background: var(--color-text-deg);
+.bioMainContent__title>.typeH1{
+    background: var(--color-text-deg-alternative);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.bioMainContent__content>.typeSubTitle1{
+.bioMainContent__subtitle>.typeSubTitle1{
     color: var(--color-White);
 }
 
@@ -38,4 +45,19 @@
 
 .bioMainContent__initScroll>button>svg>path{
     stroke: var(--color-White);
+}
+
+@media(max-width: 912px){
+    .BioMainContent {
+        background-size: cover;
+        background-position:left;
+        background-repeat: no-repeat;
+    }
+
+    .bioMainContent__title>.typeH1{
+        background: var(--color-text-deg-mobile);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
 }

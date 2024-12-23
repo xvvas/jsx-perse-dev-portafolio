@@ -1,3 +1,13 @@
+.MainContent{
+    background-image: url(../../../../assets/png/home_hero.jpg);
+    background-color: black;
+    background-size: 100%;
+    background-position:bottom;
+    background-repeat: no-repeat
+}
+
+
+
 
 .mainContent__content{
     flex: 1;
@@ -5,7 +15,15 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    background: gainsboro;
+    color: var(--color-White);
+}
+
+.mainContent__strong{
+    background: var(--color-text-deg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight:400;
 }
 
 .mainContent__initScroll {
@@ -23,4 +41,12 @@
 
 .mainContent__initScroll>button>svg>path{
     stroke: var(--color-White);
+}
+
+@media(max-width: 912px){
+    .MainContent{
+        background-size: cover;
+        background-position:bottom;
+        background-repeat: no-repeat
+    }
 }

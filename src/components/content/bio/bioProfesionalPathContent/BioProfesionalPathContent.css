@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-color: var(--color-deep-black);
 }
 
 
@@ -33,7 +34,7 @@
 
 .bioProfesionalPathContent__title,
 .bioProfesionalPathContent__cardHead>.typeH4 {
-    background: var(--color-text-deg);
+    background: var(--color-text-deg-mobile);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -63,4 +64,12 @@
 
 .bioProfesionalPathContent__initScroll>button>svg>path{
     stroke: var(--color-White);
+}
+@media(max-width: 912px){
+    .bioProfesionalPathContent__cardHead{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

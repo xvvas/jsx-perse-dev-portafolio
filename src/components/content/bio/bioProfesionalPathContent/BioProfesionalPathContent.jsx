@@ -2,7 +2,7 @@
 import "./BioProfesionalPathContent.css"
 
 //util
-import { BtnArrowDown } from "@cu/interface/btns/Btns"
+//import { BtnArrowDown } from "@cu/interface/btns/Btns"
 import { ContainerCard, ContainerSection } from "@cu/containers/Containers"
 import { TypeBody2, TypeH3, TypeH4, TypeSubTitle2 } from "@cu/fonts/Type"
 
@@ -34,7 +34,7 @@ export default function BioProfesionalPathContent() {
             <div className="bioProfesionalPathContent__content">
                 <TypeH3 className="bioProfesionalPathContent__title">Mi Recorrido Laboral</TypeH3>
                 {cardContent.map((item, index) => (
-                    <ContainerCard key={index} className="bioProfesionalPathContent__card">
+                    <ContainerCard key={index} className="bioProfesionalPathContent__card" animation={"fade-up"} duration={"2000"}>
                         <div className="bioProfesionalPathContent__cardHead">
                             <TypeH4>{item.title}</TypeH4>
                             <TypeSubTitle2>{item.subtitle}</TypeSubTitle2>
@@ -47,9 +47,11 @@ export default function BioProfesionalPathContent() {
                     </ContainerCard>
                 ))}
             </div>
-            <div className="bioProfesionalPathContent__initScroll">
+            {/*
+                <div className="bioProfesionalPathContent__initScroll">
                     <BtnArrowDown label="Conóceme" />
-            </div>
+                </div>
+            */}
         </ContainerSection>
     )
 }

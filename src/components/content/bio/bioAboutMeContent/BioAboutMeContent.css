@@ -2,6 +2,7 @@
     flex-direction: column;
     flex-direction: column;
     justify-content: center;
+    background-color: black;
 }
 
 .bioAboutMeContent__content {
@@ -12,14 +13,14 @@
     align-items: flex-start;
 }
 
-.bioAboutMeContent__content>.typeH2 {
+.bioAboutMeContent__title>.typeH2 {
     background: var(--color-text-deg);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.bioAboutMeContent__content>.typeBody1 {
+.bioAboutMeContent__subtitle>.typeBody1 {
     color: var(--color-White);
 }
 

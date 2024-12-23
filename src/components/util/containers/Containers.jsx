@@ -58,9 +58,9 @@ ContainerSection.propTypes = {
     className: PropTypes.string,
 }
 
-export function ContainerCard({children, className}){
+export function ContainerCard({children, className, animation = null, duration = null}){
     return(
-        <div className={`ContainerCard ${className ? className : ""}`}>
+        <div className={`ContainerCard ${className ? className : ""}`} data-aos={animation} data-aos-duration={duration}>
             {children}
         </div>
     )
@@ -69,4 +69,6 @@ export function ContainerCard({children, className}){
 ContainerCard.propTypes = {
     children: PropTypes.node.isRequired,
     className: PropTypes.string,
+    animation: PropTypes.string,
+    duration: PropTypes.string
 }
