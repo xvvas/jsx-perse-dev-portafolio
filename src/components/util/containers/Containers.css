@@ -8,7 +8,7 @@
     position: fixed;
     top: 0;
     /*padding: 0px clamp(2rem, 35vw - 15rem, 12.375rem);*/
-    background-color: var(--color-deep-black);
+    background-color: black;
     z-index: 20;
 }
 

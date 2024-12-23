@@ -14,7 +14,7 @@ export default function LandingNavMobile() {
 
 
     const [isOpen, setIsOpen] = useState(false)
-    const [anim, setAnim] = useState(true)
+    const [anim, setAnim] = useState(false)
 
     const handleNav = () => {
         setIsOpen(!isOpen)

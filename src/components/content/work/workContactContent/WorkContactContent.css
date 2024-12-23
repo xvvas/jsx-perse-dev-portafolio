@@ -22,7 +22,7 @@
     text-align: center;
     display: block;
     align-self: start;
-    background: var(--color-text-deg);
+    background: var(--color-text-deg-mobile);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -35,4 +35,13 @@
 .workContactContent__icons{
     display: flex;
     gap: 1rem;
+}
+
+
+@media(max-width: 912px){
+    .WorkContactContent{
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+    }
 }
