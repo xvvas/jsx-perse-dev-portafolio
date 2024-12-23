@@ -53,13 +53,13 @@ BtnLink .propTypes = {
     to: PropTypes.string.isRequired,
 }
 
-export function BtnNav({className, label, to}){
+export function BtnNav({className, label, to, onClick}){
 
     const location = useLocation();
     const selected = location.pathname === to ? "--selected" : "";
 
     return(
-        <Link to={to} className={`BtnNav${selected} ${className}`}>
+        <Link to={to} className={`BtnNav${selected} ${className}`} onClick={onClick}>
             <TypeButton>{label}</TypeButton>
             <div className={`btnNav__line${selected} `}></div>
         </Link>
@@ -71,6 +71,7 @@ BtnNav.propTypes = {
     className: PropTypes.string,
     label: PropTypes.string.isRequired,
     to: PropTypes.string.isRequired,
+    onClick: PropTypes.func
 }
 
 export function BtnMenu({ modifier , isOpen, setIsOpen}){
